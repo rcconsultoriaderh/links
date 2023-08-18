@@ -18,12 +18,7 @@ import {
 } from "@chakra-ui/react";
 import image from "../assets/rob.png";
 import prop from "../assets/download.png";
-import {
-  BsFacebook,
-  BsInstagram,
-  BsLinkedin,
-  BsWhatsapp,
-} from "react-icons/bs";
+import { BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { useState } from "react";
 export const SocialProfileSimple = () => {
   const [text, setText] = useState({
@@ -33,9 +28,9 @@ export const SocialProfileSimple = () => {
   const [isEmail, setIsEmail] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleEmailClick = () => {
-    const recipient = "destinatario@example.com";
-    const subject = "Assunto do e-mail";
-    const body = "Corpo do e-mail";
+    const recipient = "rcconsultoriaderh@gmail.com";
+    const subject = "Banco de talentos";
+    const body = "Olá quero fazer parte do seu banco de talentos";
 
     const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
       subject
@@ -81,7 +76,7 @@ export const SocialProfileSimple = () => {
           px={3}
           fontSize={"xs"}
         >
-          🧠 RH|Headhunter|Treinamento
+          Não existe sucesso
         </Text>
         <Text
           textAlign={"center"}
@@ -89,16 +84,7 @@ export const SocialProfileSimple = () => {
           px={3}
           fontSize={"xs"}
         >
-          🚀Atração e Seleção com 97% de assertividade
-        </Text>
-        <Text
-          textAlign={"center"}
-          color={useColorModeValue("gray.700", "gray.400")}
-          px={3}
-          fontSize={"xs"}
-        >
-          🎯Ajudo empresas a terem processos de gestão de pessoas por
-          competências
+          Sem gestão de pessoas
         </Text>
 
         <Stack mt={8}>
@@ -200,14 +186,6 @@ export const SocialProfileSimple = () => {
           </Button>
         </Stack>
         <Stack justifyContent={"center"} pt={6} direction={"row"} spacing={2}>
-          <BsFacebook
-            color="#1877F2"
-            onClick={() =>
-              (window.location.href =
-                "https://www.facebook.com/profile.php?id=100087955519913")
-            }
-            fontSize="30px"
-          />
           <BsWhatsapp
             color="#25D366"
             onClick={() =>
