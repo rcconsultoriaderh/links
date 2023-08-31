@@ -26,6 +26,8 @@ export const SocialProfileSimple = () => {
     description: "",
   });
   const [isEmail, setIsEmail] = useState(false);
+
+  const [grupo, setGrupo] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleEmailClick = () => {
     const recipient = "rcconsultoriaderh@gmail.com";
@@ -38,7 +40,9 @@ export const SocialProfileSimple = () => {
     window.location.href = mailtoLink;
   };
   const sendMessage = () => {
-    if (isEmail) {
+    if (grupo) {
+      window.location.href = "https://chat.whatsapp.com/Fmm3NUSi4Sz0RZ6pRAt2No";
+    } else if (isEmail) {
       handleEmailClick();
     } else {
       window.location.href =
@@ -183,6 +187,28 @@ export const SocialProfileSimple = () => {
               <Avatar size={"sm"} src={prop} />
             </Box>
             E-book
+          </Button>
+
+          <Button
+            fontSize={"sm"}
+            rounded={"full"}
+            _focus={{
+              bg: "gray.200",
+            }}
+            onClick={() => {
+              onOpen();
+              setText({
+                title: "Grupo de transbordo",
+                description:
+                  "Nele você vai aprender mais de si mesma e de Deus. Nele você vai se conectar com seu propósito e registrar a sua transformação.",
+              });
+              setGrupo(true);
+            }}
+          >
+            <Box position={"absolute"} left={"6px"}>
+              <Avatar size={"sm"} src={prop} />
+            </Box>
+            Grupo de transbordo
           </Button>
         </Stack>
         <Stack justifyContent={"center"} pt={6} direction={"row"} spacing={2}>
