@@ -96,9 +96,36 @@ export const SocialProfileSimple = () => {
             fontSize={"sm"}
             rounded={"full"}
             position={"relative"}
+            bg={"blue.400"}
+            color={"white"}
+            boxShadow={
+              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
+            }
+            _hover={{
+              bg: "blue.500",
+            }}
+            _focus={{
+              bg: "blue.500",
+            }}
+            onClick={() => {
+              window.location.href = "https://rcrh.com.br/";
+            }}
+          >
+            <Box position={"absolute"} left={"6px"}>
+              <Avatar size={"sm"} src={prop} />
+            </Box>
+            Meu site
+          </Button>
+          <Button
+            fontSize={"sm"}
+            rounded={"full"}
+            position={"relative"}
             _focus={{
               bg: "gray.200",
             }}
+            boxShadow={
+              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
+            }
             onClick={() => {
               onOpen();
               setText({
@@ -112,12 +139,16 @@ export const SocialProfileSimple = () => {
             </Box>
             Atração e Seleção
           </Button>
+
           <Button
             fontSize={"sm"}
             rounded={"full"}
             _focus={{
               bg: "gray.200",
             }}
+            boxShadow={
+              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
+            }
             whiteSpace={"normal"}
             onClick={() => {
               onOpen();
@@ -139,6 +170,9 @@ export const SocialProfileSimple = () => {
             _focus={{
               bg: "gray.200",
             }}
+            boxShadow={
+              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
+            }
             onClick={() => {
               onOpen();
               setText({
@@ -159,6 +193,9 @@ export const SocialProfileSimple = () => {
             _focus={{
               bg: "gray.200",
             }}
+            boxShadow={
+              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
+            }
             onClick={() => {
               onOpen();
               setText({
@@ -181,6 +218,9 @@ export const SocialProfileSimple = () => {
             _focus={{
               bg: "gray.200",
             }}
+            boxShadow={
+              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
+            }
             onClick={handleEbook}
           >
             <Box position={"absolute"} left={"6px"}>
@@ -195,6 +235,9 @@ export const SocialProfileSimple = () => {
             _focus={{
               bg: "gray.200",
             }}
+            boxShadow={
+              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
+            }
             onClick={() => {
               onOpen();
               setText({
