@@ -139,6 +139,7 @@ export const SocialProfileSimple = () => {
               "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
             }
             onClick={() => {
+              onOpen();
               setText({
                 title: "Programa de desenvolvimento para liderança🚀",
                 description:
