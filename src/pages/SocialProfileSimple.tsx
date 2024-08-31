@@ -16,7 +16,7 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@chakra-ui/react";
-import image from "../assets/rob.png";
+import image from "../assets/rob2.jpeg";
 import prop from "../assets/download.png";
 import { BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { useState } from "react";
@@ -54,7 +54,7 @@ export const SocialProfileSimple = () => {
   };
 
   const handleEbook = () => {
-    window.location.href = "https://sun.eduzz.com/1953858";
+    window.location.href = "https://wa.me/559499723307";
   };
 
   return (
@@ -67,12 +67,23 @@ export const SocialProfileSimple = () => {
         p={2}
         textAlign={"center"}
       >
-        <Avatar size={"2xl"} src={image} mb={4} pos={"relative"} />
+        <Avatar
+          sx={{
+            img: {
+              objectPosition: "top",
+            },
+          }}
+          objectPosition={"top"}
+          size={"2xl"}
+          src={image}
+          mb={4}
+          pos={"relative"}
+        />
         <Heading fontSize={"lg"} fontFamily={"body"}>
           Robsilene Coimbra
         </Heading>
         <Text fontSize={"sm"} fontWeight={600} color={"gray.500"} mb={4}>
-          @robicoimbra
+          @robicoimbrarh
         </Text>
         <Text
           textAlign={"center"}
@@ -96,25 +107,20 @@ export const SocialProfileSimple = () => {
             fontSize={"sm"}
             rounded={"full"}
             position={"relative"}
-            bg={"blue.400"}
-            color={"white"}
+            _focus={{
+              bg: "gray.200",
+            }}
             boxShadow={
               "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
             }
-            _hover={{
-              bg: "blue.500",
-            }}
-            _focus={{
-              bg: "blue.500",
-            }}
             onClick={() => {
-              window.location.href = "https://rcrh.com.br/";
+              window.location.href = "https://wa.me/559499723307";
             }}
           >
             <Box position={"absolute"} left={"6px"}>
               <Avatar size={"sm"} src={prop} />
             </Box>
-            Meu site
+            Mentoria ANT 🐜
           </Button>
           <Button
             fontSize={"sm"}
@@ -127,65 +133,13 @@ export const SocialProfileSimple = () => {
               "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
             }
             onClick={() => {
-              onOpen();
-              setText({
-                title: "ATRAÇÃO E SELEÇÃO",
-                description: "A excelência começa com a escolha certa!",
-              });
+              window.location.href = "https://wa.me/559499723307";
             }}
           >
             <Box position={"absolute"} left={"6px"}>
               <Avatar size={"sm"} src={prop} />
             </Box>
-            Atração e Seleção
-          </Button>
-
-          <Button
-            fontSize={"sm"}
-            rounded={"full"}
-            _focus={{
-              bg: "gray.200",
-            }}
-            boxShadow={
-              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
-            }
-            whiteSpace={"normal"}
-            onClick={() => {
-              onOpen();
-              setText({
-                title: "GESTÃO DE PESSOAS POR COMPETÊNCIAS",
-                description:
-                  "Transforme o potencial humano em estratégia de sucesso: invista em um RH estratégico para guiar sua empresa ao futuro!",
-              });
-            }}
-          >
-            <Box position={"absolute"} left={"6px"}>
-              <Avatar size={"sm"} src={prop} />
-            </Box>
-            Gestão por Competência
-          </Button>
-          <Button
-            fontSize={"sm"}
-            rounded={"full"}
-            _focus={{
-              bg: "gray.200",
-            }}
-            boxShadow={
-              "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
-            }
-            onClick={() => {
-              onOpen();
-              setText({
-                title: "PALESTRAS E TREINAMENTO",
-                description:
-                  "Ilumine sua mente, eleve seu potencial: cada treinamento, um novo horizonte de possibilidades!",
-              });
-            }}
-          >
-            <Box position={"absolute"} left={"6px"}>
-              <Avatar size={"sm"} src={prop} />
-            </Box>
-            Palestra e Treinamento
+            Programa de desenvolvimento <br /> para liderança
           </Button>
           <Button
             fontSize={"sm"}
@@ -211,7 +165,6 @@ export const SocialProfileSimple = () => {
             </Box>
             Banco de talentos
           </Button>
-
           <Button
             fontSize={"sm"}
             rounded={"full"}
@@ -228,7 +181,6 @@ export const SocialProfileSimple = () => {
             </Box>
             E-book
           </Button>
-
           <Button
             fontSize={"sm"}
             rounded={"full"}
@@ -272,8 +224,10 @@ export const SocialProfileSimple = () => {
           />
           <BsInstagram
             color="#8a3ab9"
+            cursor={"pointer"}
             onClick={() =>
-              (window.location.href = "https://www.instagram.com/robicoimbra/")
+              (window.location.href =
+                "https://www.instagram.com/robicoimbrarh/")
             }
             fontSize="30px"
           />
