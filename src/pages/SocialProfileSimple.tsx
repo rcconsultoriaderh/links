@@ -120,7 +120,7 @@ export const SocialProfileSimple = () => {
                 description:
                   "Seja um profissional Desejado, reconhecido, estratégico e valorizado",
               });
-             
+              setIsEmail(false)
             }}
           >
             <Box position={"absolute"} left={"6px"}>
@@ -145,6 +145,7 @@ export const SocialProfileSimple = () => {
                 description:
                   "Seja um líder que gera resultados de forma estratégica, desenvolvendo ações pensadas na cultura organizacional.",
               });
+              setIsEmail(false)
             }}
           >
             <Box position={"absolute"} left={"6px"}>
