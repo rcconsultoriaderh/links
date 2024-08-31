@@ -114,7 +114,13 @@ export const SocialProfileSimple = () => {
               "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
             }
             onClick={() => {
-              window.location.href = "https://wa.me/559499723307";
+              onOpen();
+              setText({
+                title: "Mentoria ANT🐜",
+                description:
+                  "Seja um profissional Desejado, reconhecido, estratégico e valorizado",
+              });
+             
             }}
           >
             <Box position={"absolute"} left={"6px"}>
@@ -133,7 +139,11 @@ export const SocialProfileSimple = () => {
               "0px 1px 10px -5px rgb(66 153 225 / 48%), 0 0px 0px -5px rgb(66 153 225 / 43%)"
             }
             onClick={() => {
-              window.location.href = "https://wa.me/559499723307";
+              setText({
+                title: "Programa de desenvolvimento para liderança🚀",
+                description:
+                  "Seja um líder que gera resultados de forma estratégica, desenvolvendo ações pensadas na cultura organizacional.",
+              });
             }}
           >
             <Box position={"absolute"} left={"6px"}>
